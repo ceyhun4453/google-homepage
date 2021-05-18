@@ -3,17 +3,22 @@
 <head>
     <title>Google</title>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <nav></nav>
     <div>
-        <img src="assets/google-logo.png">
-        <form action="" method="POST">
-            <input type="text" id="search-term" name="search-term">
-            <input type="submit" value="Google Search" id="search-submit" name=search-submit">
-            <input type="submit" value="I'm Feeling Lucky" id="lucky-submit" name="lucky-submit">
-        </form>
+        <img class="centered-horizontally" src="assets/google-logo.png">
+        <div>
+            <form class="centered-horizontally" action="" method="POST">
+                <input class="fill-container border-radius" type="text" id="search-term" name="search-term">
+                <div>
+                    <input class="block" type="submit" value="Google Search" id="search-submit" name=search-submit">
+                    <input class="block" type="submit" value="I'm Feeling Lucky" id="lucky-submit" name="lucky-submit">
+                </div>
+            </form>
+        </div>
     </div>
 
     <footer></footer>

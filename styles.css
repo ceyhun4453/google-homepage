@@ -1,0 +1,13 @@
+.centered-horizontally {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.fill-container {
+    width:100%;
+}
+
+form.centered-horizontally {
+    display: inline-block;
+}
