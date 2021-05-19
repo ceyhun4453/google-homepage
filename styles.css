@@ -4,10 +4,66 @@
     transform: translate(-50%, 0);
 }
 
-.fill-container {
+.centered-vertically {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.centered {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fill-container-width {
     width:100%;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.border-radius {
+    height: 40px;
+    border: none;
+    border-radius: 40px;
+    box-shadow: 0 0 2px darkgrey;
+}
+
+.border-radius:hover {
+    box-shadow: 0 0 6px darkgrey;
+}
+.position-right {
+    position: relative;
+    right: 0px;
+}
+
+.position-left {
+    position: relative;
+    left: 0px;
+}
+
+#search-button-container {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+form {
+    width: 582px;
+}
+
+input:focus {
+    outline: none;
 }
 
 form.centered-horizontally {
     display: inline-block;
+}
+
+input#search-term {
+    border: none;
+    width: 90%;
+    height: 80%;
 }
