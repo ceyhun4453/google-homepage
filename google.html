@@ -8,24 +8,25 @@
 </head>
 
 <body>
-    <nav>
-        <a href="#">Gmail</a>
-        <a href="#">Images</a>
+    <nav class="navigation">
+        <img class="position-relative" src="assets/dropdown-icon.svg" height="24" width="24">
+        <a class="nav-link" href="#">Images</a>
+        <a class="nav-link" href="#">Gmail</a>
     </nav>
     <div>
-        <img class="centered-horizontally" src="assets/google-logo.png">
+        <img id="logo-image" class="centered-horizontally" src="assets/google-logo.png">
         <div>
             <form class="centered-horizontally" action="" method="POST">
                 <div class="fill-container-width border-radius position-relative">
-                    <img id="search-icon" class="centered-vertically" src="assets/search-icon.png">
+                    <a href="#"><img id="search-icon" class="centered-vertically" src="assets/search-icon.png"></a>
                     <input class="centered" type="text" id="search-term" name="search-term">
-                    <img id="mic-icon" class="centered-vertically" src="assets/mic-icon.png">
+                    <a href="#"><img id="mic-icon" class="centered-vertically" src="assets/mic-icon.png"></a>
                 </div>
-                <div class="centered-horizontally" id="search-button-container">
-                    <input class="position-left large-button" id="search-button" type="submit" value="Google Search" id="search-submit"
-                        name="search-submit">
-                    <input class="position-right large-button" id="lucky-button" type="submit" value="I'm Feeling Lucky" id="lucky-submit"
-                        name="lucky-submit">
+                <div class="centered-horizontally position-relative" id="search-button-container">
+                    <input class="position-left large-button" id="search-button" type="submit" value="Google Search"
+                        id="search-submit" name="search-submit">
+                    <input class="position-right large-button" id="lucky-button" type="submit" value="I'm Feeling Lucky"
+                        id="lucky-submit" name="lucky-submit">
                 </div>
             </form>
         </div>
